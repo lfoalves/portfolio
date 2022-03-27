@@ -462,7 +462,7 @@ footer {
   grid-area: footer;
 
   width: 100%;
-  background-color: none;
+  background-color: var(--bg-cards);
   
   padding: 1.5rem;
   text-align: center;
