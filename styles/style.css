@@ -86,6 +86,9 @@ div#pages {
 
   margin: 0 auto;
   margin-top: 3.2rem;
+
+  width: 12.8rem;
+  height: 12.8rem;
 }
 
 #avatar h2 {
@@ -377,6 +380,9 @@ div#user-recent-posts img {
   clip-path: circle();
 
   margin-right: 2rem;
+
+  width: 12.8rem;
+  height: 12.8rem;
 }
 
 div#user-recent-posts div.p {
