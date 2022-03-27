@@ -1,0 +1,464 @@
+@charset "utf-8";
+
+/* RESERT */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* CONFIGURAÇÃO PARA REM dividido por 10px */
+html {
+  font-size: 62.5%;
+}
+
+/* VARIÁVEIS */
+:root {
+
+  --white: #FAFAFA;
+
+  --body-bg-color: #22212C;
+  --text-color: #837E9F;
+  --bg-cards: #302F3D;
+  --bg-techs: #CB92B1;
+
+  --font-family: 'Merriweather Sans', sans-serif;
+}
+
+/* BODY & GRID AREAS */
+body {
+  display: grid;
+  grid-template-areas: 
+  'profile pages'
+  'footer footer';
+
+  background-color: var(--body-bg-color);
+  font-family: var(--font-family);
+  font-weight: 400;
+
+  color: var(--text-color);
+}
+
+.card {
+  background-color: var(--bg-cards);
+  border-radius: 2rem;
+
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+
+  transition: .2s;
+}
+
+.card:hover {
+  color: #fff;
+}
+
+/* x x x x x x init princial x x x x x x */
+div#profile {
+  grid-area: profile;
+
+  margin: 0 auto;
+}
+
+div#pages {
+  grid-area: pages;
+
+  margin: 0 auto;
+}
+/* x x x x x x ending principal x x x x x x */
+
+/* INÍCIO DAS CONFIGURAÇÔES DE DIV PRINCIPAL #PROFILE */
+
+/* DIV #AVATAR sub div da div profile */
+#avatar {
+  width: 32.8rem;
+  height: 29.2rem;
+
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  margin: 3rem 0;
+}
+
+#avatar img {
+  clip-path: circle();
+
+  margin: 0 auto;
+  margin-top: 3.2rem;
+}
+
+#avatar h2 {
+  font-size: 2.3rem;
+}
+
+#avatar h3 {
+  font-weight: 400;
+  margin-bottom: 4.9rem;
+}
+
+/* DIV #LINKS sub div da div #profile */
+#links {
+  width: 32.8rem;
+  height: 34.8rem;
+
+  display: grid;
+  align-items: center;
+  justify-content: flex-start;
+
+  padding: 3rem;
+  padding-left: 4rem;
+
+  margin: 3rem 0;
+}
+
+#links:hover a {
+  color: var(--white);
+}
+
+#links img {
+  margin-right: 2rem;
+}
+
+#links a {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+#links a {
+  transition: .2s;
+}
+
+
+#links a:hover {
+  color: #CB92B1;
+  transform: scale(1.1);
+}
+
+/* DIV #LANGUAGES sub div da div #profile */
+#languages {
+  width: 32.8rem;
+
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+
+  margin: 3rem 0;
+}
+
+#languages h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+#languages #lang {
+  padding: 0;
+}
+
+#languages #lang a {
+  background-color: var(--bg-techs);
+  
+  display: inline-flex;
+  padding: .5rem 1rem;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+
+  margin: .5rem;
+
+  color: #000;
+  font-weight: 700;
+
+  transition: .2s
+}
+
+#languages #lang a:hover {
+  background-color:deeppink;
+  color: var(--white);
+  outline: 1px solid aqua ;
+  transform: scale(1.1);
+}
+
+/* DIV #EXPERIENCE sub div da div #profile */
+#experience {
+  width: 32.8rem;
+
+  padding: 3rem;
+
+  margin: 3rem 0;
+}
+
+#experience h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+#experience ul {
+  margin-left: 4rem;
+  margin-bottom: 3rem;
+}
+
+#experience ul li {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+#experience ul li p {
+  font-size: 1.2rem;
+}
+
+
+
+/*div education*/
+#education {
+  width: 32.8rem;
+
+  padding: 3rem;
+
+  margin: 3rem 0;
+}
+
+#education h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+#education ul {
+  margin-left: 4rem;
+  margin-bottom: 3rem;
+}
+
+#education ul li {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+#education ul li p {
+  font-size: 1.2rem;
+}
+
+/* INÍCIO DAS CONFIGURAÇÔES DA SEGUNDA DIV PRINCIPAL #PAGES */
+/* PRINCIPAL-2 DIV #PAGES */
+div#pages {
+  background-color: none-
+}
+
+div#my-projects {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem;
+  width: 93.2rem;
+  height: 8.6rem;
+
+  font-size: 1.3rem;
+
+  margin: 3rem 0;
+}
+
+/* sub DIV CARTOES da sub DIV PROJECTS da 2-PRINCIPAL PAGES*/
+div#cartoes {
+  display: flex;
+  gap: 0;
+
+  align-items: center;
+  justify-content: space-between;
+}
+
+div#cards {
+  width: 44.1rem;
+  height: 18.6rem;
+
+  padding: 3rem;
+}
+
+div#cartoes div#cards div#header img {
+  margin-right: 1rem;
+}
+
+div#cartoes div#cards div#header p:nth-child(1) {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  font-size: 1.6rem;
+  font-weight: 700;
+
+  margin-bottom: 2.2rem;
+}
+
+div#cartoes div#cards div#header p:nth-child(2) {
+  margin-bottom: 2.2rem;
+  font-size: 1.4rem;
+}
+
+div#cartoes div#cards div#rodape {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+div#cartoes div#cards div#rodape {
+  font-size: 1.4rem ;
+}
+
+div#cartoes div#cards div#rodape div:nth-child(1) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: none;
+}
+
+div#cartoes div#cards div#rodape div:nth-child(1) span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+div#cartoes div#cards div#rodape div:nth-child(1) img {
+  margin-right: 0.8rem;
+  background-color: none;
+  width: 2rem;
+  height: 2rem;
+}
+
+div#cartoes div#cards div#rodape div:nth-child(1) span:nth-child(1) {
+  margin-right: 1.6rem;
+}
+
+div#cartoes div#cards div#rodape div:nth-child(2) span img {
+  margin-right: 0.8rem;
+}
+
+
+
+/* SUB DIV #POSTS da DIV #PAGES */
+div#posts {
+  background-color: none;
+}
+
+div#recent-posts {
+  width: 93.2rem;
+  height: 8.6rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  font-size: 1.3rem;
+
+  padding: 3rem;
+
+  margin: 3rem 0;
+}
+
+/* sub div da sub div #posts */
+div#user-recent-posts {
+  width: 93.2rem;
+  height: 20.1rem;
+
+  padding: 3rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+div#user-recent-posts img {
+  clip-path: circle();
+
+  margin-right: 2rem;
+}
+
+div#user-recent-posts div.p {
+  margin: 2.8rem;
+
+  font-size: 1.2rem;
+
+  line-height: 2.8rem;
+}
+
+div#user-recent-posts div .p h3 {
+  font-size: 1.8rem;
+}
+
+div#user-recent-posts div .p h4 {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+div#user-recent-posts div .p p {
+  font-size: 1.4rem;
+}
+
+
+
+div#user-recent-posts div.p:nth-child(1) {
+  font-weight: 700;
+}
+
+/* x x x x x x - - - DIV BACKGROUND - - - x x x x x x */
+div#background {
+  opacity: .5;
+
+  width: 93.2rem;
+  height: 50rem;
+  background-color: red;
+
+  margin: 3rem 0;
+  
+  background: url("https://images.unsplash.com/photo-1534972195531-d756b9bfa9f2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80") no-repeat;
+
+  background-size: 100%;
+
+  border-radius: 3rem 3rem 3rem 3rem;
+
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+  transition: .2s;
+}
+
+div#background:hover {
+  opacity: 1;
+}
+
+div#background p {
+  visibility: hidden;
+  opacity: 0;
+
+  text-align: center;
+
+  padding: 3rem;
+  font-size: 1.6rem;
+
+  transition: .2s;
+}
+
+div#background:hover p {
+  opacity: 1;
+
+  visibility: visible;
+  font-size: 3rem;
+  text-align: center;
+  padding: 3rem;
+}
+
+/* x x x x x x FOOTER x x x x x x */
+footer {
+  grid-area: footer;
+
+  width: 100%;
+  background-color: none;
+  
+  padding: 1.5rem;
+  text-align: center;
+  font-size: 1.6rem;
+}
